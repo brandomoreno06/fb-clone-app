@@ -1,0 +1,23 @@
+.widget {
+    flex: 0.3;
+    padding: 30px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.widget > iframe {
+    width: 340px;
+    height: 100%;
+    border:none;
+    overflow: hidden;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .widget {
+        display: none;
+    }
+}

@@ -1,0 +1,26 @@
+.sidebar__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+
+.sidebar__row > h4 {
+    margin-left: 20px;
+}
+
+.sidebar__row__icon > .MuiAvatar-circular {
+    width: 30px;
+    height: 30px;
+}
+
+.sidebar__row__icon > .MuiSvgIcon-root {
+    color: var(--fb-color);
+}
+
+.sidebar__row:hover {
+    background-color: lightgray;
+    border-radius: 10px;
+}
+

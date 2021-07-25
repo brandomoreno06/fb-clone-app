@@ -1,0 +1,19 @@
+.stories__container {
+    width: 100%;
+}
+
+.stories {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+@media (max-width: 425px) {
+    
+    .stories {
+        width: max-content;
+        height: 100%;
+    }
+
+}

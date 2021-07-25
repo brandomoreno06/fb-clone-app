@@ -1,0 +1,161 @@
+.create-post {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.create-post > h2 {
+    text-align: center;
+    border-bottom: 1px solid #eff2f5;
+    padding-bottom: 10px;
+}
+
+.create-post__close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.create-post__close:hover {
+    color: var(--fb-color);
+}
+
+
+.create-post__header {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.create-post__header > h4 {
+    margin-left: 10px;
+}
+
+.create-post__text {
+    margin-bottom: 20px;
+    width: 100%;
+    min-height: 100px;
+    max-height: 250px;
+    box-sizing: border-box;
+    padding: 10px;
+    outline: none;
+    overflow-y: scroll;
+    font-size: 20px;
+}
+
+
+.create-post__text:empty::before {
+    content: attr(placeholder);
+    color: gray;
+}
+
+
+.create-post__text::-webkit-scrollbar {
+    width: 5px;
+}
+
+.create-post__text::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+.create-post__text::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+
+.selectedImage__container {
+    width: 100%;
+    max-height: 300px;
+    margin-bottom: 10px;
+}
+
+.selectedImage__container > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-top: 10px;
+}
+
+
+
+.create-post__addImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #eff2f5;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.create-post > input {
+    display: none;
+}
+
+.create-post__addImage > .MuiSvgIcon-root {
+    margin-right: 10px;
+    color: green;
+}
+
+.create-post__addImage:active, .create-post__addImage:active > .MuiSvgIcon-root {
+    color: var(--fb-color);
+}
+
+
+.create-post__submit:disabled {
+    cursor: not-allowed;
+    background-color: #eff2f5;
+    color: gray;
+}
+
+.create-post__submit {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    color: white;
+    background-color: var(--fb-color);
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 425px) {
+
+    .create-post > h2 {
+        font-size: 16px;
+    }
+
+    .create-post__header > .MuiAvatar-root {
+        width: 30px;
+        height: 30px;
+    }
+
+    .create-post__text,
+    .create-post__text:empty::before,
+    .create-post__addImage,
+    .create-post__submit > h3 {
+        font-size: 14px;
+    }
+
+    .create-post__text {
+        max-height: 150px;
+    }
+
+
+    .create-post__addImage > .MuiSvgIcon-root {
+        font-size: 16px;
+    }
+
+    .create-post__submit {
+        padding: 5px;
+        margin-top: 5px;
+    }
+
+}

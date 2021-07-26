@@ -126,13 +126,31 @@
 @media (max-width: 425px) {
     
     .header {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .header__right > :not(.signOut__button) {
+        display: none;
+    }
+
+    .signOut__button {
+        font-size: 12px;
+        height: 25px;
     }
 
     .header__right {
-        display: none;
+        order: 2;
     }
+
+    .header__middle {
+        width: 100%;
+        order: 3;
+        justify-self: center;
+    }
+
+
 
     .header__search__input {
         width: 80%;

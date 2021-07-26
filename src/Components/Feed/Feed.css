@@ -17,6 +17,19 @@
 }
 
 
+.footer {
+    width: 100%;
+    padding: 10px;
+    margin: 50px;
+    margin-bottom: 100px;
+    height: 50px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+}
+
+
 @media (max-width: 1024px) {
     .feed {
         flex: 0.75;

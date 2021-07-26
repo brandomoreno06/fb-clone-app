@@ -40,6 +40,10 @@ const Feed = () => {
         })
 
         }
+
+        <div className="footer">
+          <h4>Created by: <strong>Brando Moreno</strong></h4>
+        </div>
     </div>
   )
 }

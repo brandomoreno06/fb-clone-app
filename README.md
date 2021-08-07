@@ -42,5 +42,5 @@ Functionalities:
 
 
 # Deployment:
-# https://facebook-clone-5423d.web.app
+# https://clone-app-fb.web.app/
 
